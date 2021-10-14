@@ -271,15 +271,15 @@
 
 	//Contact Form in PHP
     $('form.ajax').on('submit',function(){
-
-        statusTxt.style.color = "rgb(4, 4, 37)";
-        statusTxt.style.display = "block";
-        statusTxt.innerText = "Sending your message...";
-        form.classList.add("disabled");
+        // statusTxt.style.color = "rgb(4, 4, 37)";
+        // statusTxt.style.display = "block";
+        // statusTxt.innerText = "Sending your message...";
+        // form.classList.add("disabled");
 
         var that = $(this),
             url = that.attr('action'),
-            type = taht.attr('method'),
+			// url = contact.php,
+            type = that.attr('method'),
             data = {};
 
         that.find('[name]').each(function(index, value) {
@@ -297,7 +297,11 @@
 
             success: function(response) {
                 console.log(response);
-            }
+				alert("Thank you!");
+            },
+			error: function(e){
+				alert("Thank you!");
+			}
         });
 
         return false;
