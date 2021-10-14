@@ -297,10 +297,15 @@
 
             success: function(response) {
                 console.log(response);
+				data.reset();
+				that.reset();
 				alert("Thank you!");
             },
 			error: function(e){
+				that.reset();
+				data.reset();
 				alert("Thank you!");
+
 			}
         });
 
