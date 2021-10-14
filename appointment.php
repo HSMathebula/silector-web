@@ -29,7 +29,7 @@ $email_body = "You have received a new message from your Website's Expression of
 
 $headers = "From: info@paperinstrument.com\n";
 
-$headers = "Reply-To: $email_address";   
+$headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true; 
 ?>
