@@ -21,11 +21,11 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
    
 // Create the email and send the message
-$to = 'info@paperinstrument.com'; 
-$email_subject = "From Website: $subject:  $name";
+$to = 'info@silector.co.za'; 
+$email_subject = "Website - $subject:  $name";
 $email_body = "You have received a new message from your Website's Expression of Interest Form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage: $message\n\n";
 
-$headers = "From: info@paperinstrument.com\n";
+$headers = "From: info@silector.co.za\n";
 
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
