@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Letjema Construction</title>
+    <title>Silector Auto Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
@@ -26,15 +30,46 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
   </head>
   <body>
+	<div id="myButton" style="z-index: 9999;"></div>
     <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="index.html"><span class=""></span>Letjema Construction</a>
-    			</div>
-	    		<!-- <div class="col-lg-8 d-block">
+		<div class="container">
+			<div class="row no-gutters d-flex align-items-center align-items-stretch">
+				<div class="col-md-4 d-flex align-items-center py-4">
+					<a class="navbar-brand" href="index.html"><span class=""></span><img src="images/logo-01.png"alt=""></a>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+					<div class="container d-flex align-items-center">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+							aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="oi oi-menu"></span> Menu
+						</button>
+						<!-- <form action="#" class="searchform order-lg-last">
+							<div class="form-group d-flex">
+								<input type="text" class="form-control pl-3" placeholder="Search">
+								<button type="submit" placeholder="" class="form-control search"><span
+										class="ion-ios-search"></span></button>
+							</div>
+						</form> -->
+						<div class="collapse navbar-collapse" id="ftco-nav">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
+								<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+								<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+								<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- <div class="col-lg-8 d-block">
 		    		<div class="row d-flex">
 					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
 					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-mail"></span></div>
@@ -57,34 +92,12 @@
 					    </div>
 				    </div>
 			    </div> -->
-		    </div>
-		  </div>
-    </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
-          </div>
-        </form>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item active"><a href="project.html" class="nav-link">Project</a></li>
-	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>m -->
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+			</div>
+		</div>
+	</div>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -101,108 +114,108 @@
     		<div class="row no-gutters">
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-1.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-1.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-2.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-2.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-3.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-3.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-4.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-4.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-5.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-5.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-6.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-6.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-7.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-7.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-8.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">Place</a></h3>
 	    				</div>
-	    				<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-8.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-9.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-9.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">San Francisco Tower</a></h3>
 	    				</div>
-	    				<a href="images/work-9.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-9.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -221,24 +234,24 @@
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-11.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-11.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">San Francisco Tower</a></h3>
 	    				</div>
-	    				<a href="images/work-11.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-11.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-12.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/work-12.png" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
 	    					<span>Work</span>
 	    					<h3><a href="project.html">San Francisco Tower</a></h3>
 	    				</div>
-	    				<a href="images/work-12.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/work-12.png" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -248,58 +261,68 @@
 		</section>
 
 		
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2 logo"><span class="flaticon-bee"></span>Letjema Construction</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati accusantium, culpa laudantium minus rem itaque eveniet, facere quae unde odio mollitia, possimus deleniti officia odit harum architecto maiores vero dolore!</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class=" icon-facebook2"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-            
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>General Building</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Civil Engineering Work</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Painting</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Pools</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Decking and Wooden Flooring</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Art Rock</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tiling</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Paving</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Road Marking</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- <div class="col-md">
-            <div class="ftco-footer-widget mb-5">
-            	<h2 class="ftco-heading-2">Newsletter</h2>
-              <form action="#" class="subscribe-form">
-                <div class="form-group">
-                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe" class="form-control submit px-3">
-                </div>
-              </form>
-            </div>
-          </div> -->
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+		<footer class="ftco-footer ftco-bg-dark ftco-section">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-5">
+							<div class="col-md-4 d-flex align-items-center py-4">
+								<a class="navbar-brand" href="index.html"><span class=""></span><img src="images/logo-01.png"
+										alt=""></a>
+							</div>
+							<p>Visit us on our social media to get updates, tip on car related topics and more like special offers and so on. Stay in touch for your car's sake ;-)</p>
+							<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+								<!-- <li class="ftco-animate"><a href="#"><img src="images/icons-13.png" alt="" width="100%"></a></li> -->
+								<li class="ftco-animate"><a href="#"><img src="images/icons-14.png" alt="" width="100%"></a></li>
+								<li class="ftco-animate"><a href="#"><img src="images/icons-15.png" alt="" width="100%"></a></li>
+								<li class="ftco-animate"><a href="#"><img src="images/icons-16.png" alt="" width="100%"></a></li>
+								<li class="ftco-animate"><a href="#"><img src="images/icons-17.png" alt="" width="100%"></a></li>
+								<li class="ftco-animate"><a href="#"><img src="images/icons-18.png" alt="" width="100%"></a></li>
+							</ul>
+						</div>
+	
+					</div>
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-5 ml-md-4">
+							<h2 class="ftco-heading-2">Services</h2>
+							<ul class="list-unstyled">
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Panel Beating and Spray Painting</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Mechanical</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Leather Seats</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Auto Electrical</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tyre Services</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Mag and Rim Repairs</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Welding</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Engineering</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Car Wrapping</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Car Wash</a></li>
+								<li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Free Towing</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="col-md">
+				<div class="ftco-footer-widget mb-5">
+					<h2 class="ftco-heading-2">Newsletter</h2>
+				  <form action="#" class="subscribe-form">
+					<div class="form-group">
+					  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+					  <input type="submit" value="Subscribe" class="form-control submit px-3">
+					</div>
+				  </form>
+				</div>
+			  </div> -->
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+	
+						<p>
+							Copyright &copy;<script>
+								document.write(new Date().getFullYear());
+							</script> All rights reserved </p>
+					</div>
+				</div>
+			</div>
+		</footer>
     
   
 
@@ -307,7 +330,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

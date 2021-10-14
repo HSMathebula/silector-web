@@ -255,21 +255,53 @@
 
 	$('.appointment_time').timepicker();
 
-
-	$(function() {
-		$('#WAButton').floatingWhatsApp({
-		  phone: '1231231231', //WhatsApp Business phone number International format-
-		  //Get it with Toky at https://toky.co/en/features/whatsapp.
-		  headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-		  popupMessage: 'Hello, how can we help you?', //Popup Message
-		  showPopup: true, //Enables popup display
-		  buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-		  //headerColor: 'crimson', //Custom header color
-		  //backgroundColor: 'crimson', //Custom background button color
-		  position: "right"    
+	$(function () {
+		$('#myButton').floatingWhatsApp({
+			phone: '+27798994701',
+			popupMessage: 'Hello, how can we help you?',
+			message: "Hi, can you please assist me ",
+			showPopup: true,
+			showOnIE: false,
+			headerTitle: 'Welcome!',
+			headerColor: '#005fab',
+			backgroundColor: '#005fab',
+			buttonImage: '<img src="whatsapp.svg" />'
 		});
-	  });
+	});
 
+	//Contact Form in PHP
+    $('form.ajax').on('submit',function(){
 
+        statusTxt.style.color = "rgb(4, 4, 37)";
+        statusTxt.style.display = "block";
+        statusTxt.innerText = "Sending your message...";
+        form.classList.add("disabled");
+
+        var that = $(this),
+            url = that.attr('action'),
+            type = taht.attr('method'),
+            data = {};
+
+        that.find('[name]').each(function(index, value) {
+            var that = $(this),
+                name = that.attr('name'),
+                value = that.val();
+            
+            data[name] = value;
+        });
+
+        $.ajax({
+            url: url,
+            type: type,
+            data: data,
+
+            success: function(response) {
+                console.log(response);
+            }
+        });
+
+        return false;
+    });
+	
 })(jQuery);
 

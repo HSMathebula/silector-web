@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Letjema Construction</title>
+    <title>Silector Auto Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
@@ -26,65 +30,74 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
   </head>
   <body>
+    <div id="myButton" style="z-index: 9999;"></div>
     <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="index.html"><span class=""></span>Letjema Construction</a>
-    			</div>
-	    		<!-- <div class="col-lg-8 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-mail"></span></div>
-					    	<div class="text d-flex align-items-center">
-						    	<span>info@letjema.co.za</span>
-						    </div>
-					    </div>
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone"></span></div>
-						    <div class="text d-flex align-items-center">
-						    	<span>Call Us: +27 82 903 6226</span>
-						    </div>
-					    </div>
-					    <div class="col-md topper d-flex align-items-center align-items-stretch">
-					    	<p class="mb-0 d-flex d-block">
-					    		<a href="#" class="btn btn-primary d-flex align-items-center justify-content-center">
-					    			<span>Request A Quote</span>
-					    		</a>
-					    	</p>
-					    </div>
-				    </div>
-			    </div> -->
-		    </div>
-		  </div>
-    </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
+      <div class="container">
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <a class="navbar-brand" href="index.html"><span class=""></span><img src="images/logo-01.png"alt=""></a>
           </div>
-        </form>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
-	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container d-flex align-items-center">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+              </button>
+              <!-- <form action="#" class="searchform order-lg-last">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control pl-3" placeholder="Search">
+                  <button type="submit" placeholder="" class="form-control search"><span
+                      class="ion-ios-search"></span></button>
+                </div>
+              </form> -->
+              <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
+                  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- <div class="col-lg-8 d-block">
+              <div class="row d-flex">
+                <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                  <div class="icon d-flex justify-content-center align-items-center"><span class="icon-mail"></span></div>
+                  <div class="text d-flex align-items-center">
+                    <span>info@letjema.co.za</span>
+                  </div>
+                </div>
+                <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                  <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone"></span></div>
+                  <div class="text d-flex align-items-center">
+                    <span>Call Us: +27 82 903 6226</span>
+                  </div>
+                </div>
+                <div class="col-md topper d-flex align-items-center align-items-stretch">
+                  <p class="mb-0 d-flex d-block">
+                    <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center">
+                      <span>Request A Quote</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -96,185 +109,191 @@
       </div>
     </section>
 
-    <section class="ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
-    	<div class="container">
-				<div class="row">
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+    <section class="ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.png);"
+		data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row rnum">
+				<!-- <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 d-flex">
               <div class="text d-flex align-items-center">
-                <strong class="number" data-number="30">0</strong>
+                <strong class="number" data-number="12">0</strong>
               </div>
               <div class="text-2">
               	<span>Years of <br>Experienced</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 d-flex">
-              <div class="text d-flex align-items-center">
-                <strong class="number" data-number="1500">0</strong>
-              </div>
-              <div class="text-2">
-              	<span>Project <br>Successful</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 d-flex">
-              <div class="text d-flex align-items-center">
-                <strong class="number" data-number="100">0</strong>
-              </div>
-              <div class="text-2">
-              	<span>Professional <br>Expert</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 d-flex">
-              <div class="text d-flex align-items-center">
-                <strong class="number" data-number="300">0</strong>
-              </div>
-              <div class="text-2">
-              	<span>Happy <br>Customers</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section>
+          </div> -->
+				<div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="text d-flex align-items-center">
+							<strong class="number" data-number="100">0</strong>
+						</div>
+						<div class="text-2">
+							<span>Project <br>Successful</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="text d-flex align-items-center">
+							<strong class="number" data-number="10">0</strong>
+						</div>
+						<div class="text-2">
+							<span>Professional <br>Expert</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="text d-flex align-items-center">
+							<strong class="number" data-number="300">0</strong>
+						</div>
+						<div class="text-2">
+							<span>Happy <br>Customers</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section class="ftco-section">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/bg_2.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/bg_2.png);">
 					</div>
 					<div class="col-md-7 wrap-about py-5 px-4 px-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
-	            <h2 class="mb-4">We Are Highly Recommendable Construction Firm</h2>
+	            <h2 class="mb-4">Silector pty(LTD) Auto and General Services</h2>
 	          </div>
 	          <div class="">
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti recusandae nisi impedit, consectetur aspernatur iste animi, consequuntur assumenda ex eligendi deserunt fugit, eius placeat laboriosam. Eius quasi laboriosam deleniti temporibus?</p>
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, cumque. </p>
+							<p>We are a company base in eMalahleni klipfontein. We are fully complient to the industry regulations, we've been opararing since 2020 and have never failed to deliver what we promise.
+                We offer a variety of services some are rear services round the city of eMalahleni. Services we offer are mainly: Panel beating and Spraying, Machanics, Engineering, leather Seats(Manufacturing and Repairing), Mag and Rims Repair, Free Towing, Auto Electrical, Tyre Services, Welding, Car Wrapping and Car Wash.
+              </p>
+							<p>We handle your car with car. </p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-    <section class="ftco-section testimony-section ftco-no-pt">
+    <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row ftco-animate">
-        	<div class="col-md-6 col-lg-6 col-xl-4">
-        		<div class="heading-section ftco-animate">
-	          	<span class="subheading">Services</span>
-	            <h2 class="mb-4">Experience Great Services</h2>
-	          </div>
-        		<div class="services-flow">
-        			<div class="services-2 p-4 d-flex ftco-animate">
-        				<div class="icon">
-        					<span class="flaticon-engineer"></span>
-        				</div>
-        				<div class="text">
-	        				<h3>Expert &amp; Professional</h3>
-	        				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati fugiat atque laborum quasi ratione doloribus vero placeat laboriosam sequi recusandae. Dolor tempore natus laborum mollitia cupiditate veritatis, iusto labore quaerat.</p>
-        				</div>
-        			</div>
-        			<div class="services-2 p-4 d-flex ftco-animate">
-        				<div class="icon">
-        					<span class="flaticon-engineer-1"></span>
-        				</div>
-        				<div class="text">
-	        				<h3>High Quality Work</h3>
-	        				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem, facilis mollitia nihil blanditiis impedit iure, reprehenderit perferendis velit hic tempore vel ipsum iste officia reiciendis quam dolor sunt fuga?</p>
-	        			</div>
-        			</div>
-        			<div class="services-2 p-4 d-flex ftco-animate">
-        				<div class="icon">
-        					<span class="flaticon-engineer-2"></span>
-        				</div>
-        				<div class="text">
-	        				<h3>24/7 Help Support</h3>
-	        				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam, ducimus sunt recusandae laboriosam quod suscipit, minima aliquam ad dolor at nisi, hic veritatis saepe quam! Hic animi adipisci quos?</p>
-	        			</div>
-        			</div>
-        		</div>
-        	</div>
-        	<div class="col-xl-1 d-xl-block d-none"></div>
+          <div class="col-md-6 col-lg-6 col-xl-4">
+            <div class="heading-section ftco-animate">
+              <span class="subheading">Services</span>
+              <h2 class="mb-4">Experience Great Services</h2>
+            </div>
+            <div class="services-flow">
+              <div class="services-2 p-4 d-flex ftco-animate">
+                <div class="icon">
+                  <span class="flaticon-engineer"></span>
+                </div>
+                <div class="text">
+                  <h3>Expert &amp; Professional</h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="services-2 p-4 d-flex ftco-animate">
+                <div class="icon">
+                  <span class="flaticon-engineer-1"></span>
+                </div>
+                <div class="text">
+                  <h3>High Quality Work</h3>
+                  <p>We diagnose the problem, give you a reasonable quote, fix the proble and deliver on time. Your car's health is our first priority</p>
+                </div>
+              </div>
+              <div class="services-2 p-4 d-flex ftco-animate">
+                <div class="icon">
+                  <span class="flaticon-engineer-2"></span>
+                </div>
+                <div class="text">
+                  <h3>24/7 Help Support</h3>
+                  <p>You can get assistance at any time of the day and night with our free towing service. You can call <br><br>
+                  013 101 1085 (08h00 - 17h00) <br> 063 755 9946 (Anytime) <br> 074 674 3477 (Anytime) <br> 063 178 6607 (Anytime) <br> 061 679 0268 (Anytime) <br> 078 011 3997 (Anytime)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-1 d-xl-block d-none"></div>
           <div class="col-md-6 col-lg-6 col-xl-7">
-          	<div class="heading-section ftco-animate mb-5">
-	          	<span class="subheading">Testimonials</span>
-	            <h2 class="mb-4">Satisfied Customer</h2>
-	            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officiis, iusto molestias, totam quas blanditiis aut saepe incidunt earum dolor minima. Nihil soluta totam at quidem magni harum facere sint!</p>
-	          </div>
+            <div class="heading-section ftco-animate mb-5">
+              <span class="subheading">Testimonials</span>
+              <h2 class="mb-4">Satisfied Customer</h2>
+              <p>We pride ourselve with a good service whether it's the car or our customer, we provide ultimate service because a happy customer is a safe driver.</p>
+            </div>
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap">
                   <div class="text bg-light p-4">
-                  	<span class="quote d-flex align-items-center justify-content-center">
+                    <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda atque, inventore qui in fuga molestiae asperiores corporis sapiente dolore explicabo repellendus perferendis consequuntur mollitia itaque laborum quam, maxime veniam nesciunt.</p>
-                    <p class="name">John Doe</p>
+                    <p>I love your service guys but wish you had 24 hour live chat on your site. hope you grow bigger, great service.</p>
+                    <p class="name">Jacob Joubert</p>
                     <span class="position">Farmer</span>
                   </div>
-                  <!-- <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                  </div> -->
+                  <!-- <div class="user-img" style="background-image: url(images/person_1.jpg)"></div> -->
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
                   <div class="text bg-light p-4">
-                  	<span class="quote d-flex align-items-center justify-content-center">
+                    <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis voluptates amet facere totam, expedita nostrum est voluptas natus quam qui labore culpa sapiente, facilis aliquam quod, voluptatum soluta saepe?</p>
-                    <p class="name">John Doe</p>
-                    <span class="position">Businessman</span>
+                    <p>I'm greatful for the wonderful job you guys did on my car and
+                      for all the useful tip(via email) I keep recieving from you they are eye opening. </p>
+                    <p class="name">Prudence Tlou</p>
+                    <span class="position">Businesswoman</span>
                   </div>
                   <!-- <div class="user-img" style="background-image: url(images/person_2.jpg)">
-                  </div> -->
+                    </div> -->
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
                   <div class="text bg-light p-4">
-                  	<span class="quote d-flex align-items-center justify-content-center">
+                    <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ea dolorem non. Aut, repudiandae. Quia, ratione. Accusantium quos quo tempora hic? Facilis maxime vitae in recusandae nobis laborum fugit saepe!</p>
-                    <p class="name">John Doe</p>
-                    <span class="position">Students</span>
+                    <p>After i got my car fix with Silector(Auto and General services),
+                      i received a very nice message thanking me for visiting their workshop and
+                      gave me few tips how to avoid getting in to the car promblem I had</p>
+                    <p class="name">John Naudé</p>
+                    <span class="position">Student</span>
                   </div>
                   <!-- <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                  </div> -->
+                    </div> -->
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
                   <div class="text bg-light p-4">
-                  	<span class="quote d-flex align-items-center justify-content-center">
+                    <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia non, soluta molestiae exercitationem at voluptatem alias, natus nisi voluptatum id, labore ipsam? Ab tempora debitis ea odio quaerat ad eum.</p>
-                    <p class="name">John Doe</p>
-                    <span class="position">Striper</span>
+                    <p>Get hold of this guys is so easy and their process is simple, their help line was open 24 hours for me.</p>
+                    <p class="name">Sipho Mathebula</p>
+                    <span class="position">Web dev</span>
                   </div>
                   <!-- <div class="user-img" style="background-image: url(images/person_4.jpg)">
-                  </div> -->
+                    </div> -->
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
                   <div class="text bg-light p-4">
-                  	<span class="quote d-flex align-items-center justify-content-center">
+                    <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia pariatur dolore eaque nam? Laboriosam ex qui facere dolor! Saepe at eum accusantium reiciendis tempora delectus atque iure, deleniti laudantium.</p>
-                    <p class="name">John Doe</p>
+                    <p>I was stuck on the road at night and I called Silector car service and they came to fetch me, buy tomorrow mid day my car was fix and washed. I've never been helped so easy and fast with my car before.</p>
+                    <p class="name">Lizz Nkambule</p>
                     <span class="position">Manager</span>
                   </div>
                   <!-- <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                  </div> -->
+                    </div> -->
                 </div>
               </div>
             </div>
@@ -284,57 +303,77 @@
     </section>
 		
 		
-		<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-9 text-center">
-						<h2>Lets Build Your Dream Together</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quia. Voluptates asperiores, hic id molestias dolorum perferendis esse delectus recusandae laudantium, inventore minus libero velit earum blanditiis molestiae, a dolores.</p>
-						<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Know more about us</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+		<section class="ftco-intro" style="background-image: url(images/bg_3.png);" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 text-center">
+            <h2>Lets Take Care Of Your Car Together</h2>
+            <p>It only takes a call/message to get what your car needs.</p>
+            <p class="mb-0"><a href="contact.html" class="btn btn-primary px-4 py-3">Get In Touch</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
 		
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2 logo"><span class="flaticon-bee"></span>Letjema Construction</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestiae temporibus nisi iusto totam quasi sed fugiat praesentium quis sunt. Incidunt nesciunt fuga quaerat quod facilis velit fugiat exercitationem itaque?</p>
+              <div class="col-md-4 d-flex align-items-center py-4">
+                <a class="navbar-brand" href="index.html"><span class=""></span><img src="images/logo-01.png"
+                    alt=""></a>
+              </div>
+              <p>Visit us on our social media to get updates, tip on car related topics and more like special offers and so on. Stay in touch for your car's sake ;-)</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class=" icon-facebook2"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <!-- <li class="ftco-animate"><a href="#"><img src="images/icons-13.png" alt="" width="100%"></a></li> -->
+                <li class="ftco-animate"><a href="#"><img src="images/icons-14.png" alt="" width="100%"></a></li>
+                <li class="ftco-animate"><a href="#"><img src="images/icons-15.png" alt="" width="100%"></a></li>
+                <li class="ftco-animate"><a href="#"><img src="images/icons-16.png" alt="" width="100%"></a></li>
+                <li class="ftco-animate"><a href="#"><img src="images/icons-17.png" alt="" width="100%"></a></li>
+                <li class="ftco-animate"><a href="#"><img src="images/icons-18.png" alt="" width="100%"></a></li>
               </ul>
             </div>
-            
+  
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-5 ml-md-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>General Building</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Civil Engineering Work</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Painting</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Pools</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Decking and Wooden Flooring</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Art Rock</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tiling</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Paving</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Road Marking</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Panel Beating and Spray Painting</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Mechanical</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Leather Seats</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Auto Electrical</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Tyre Services</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Mag and Rim Repairs</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Welding</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Engineering</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Car Wrapping</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Car Wash</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Free Towing</a></li>
               </ul>
             </div>
           </div>
-
+          <!-- <div class="col-md">
+              <div class="ftco-footer-widget mb-5">
+                <h2 class="ftco-heading-2">Newsletter</h2>
+                <form action="#" class="subscribe-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe" class="form-control submit px-3">
+                  </div>
+                </form>
+              </div>
+            </div> -->
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-
+  
             <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+              Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved </p>
           </div>
         </div>
       </div>
@@ -346,7 +385,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

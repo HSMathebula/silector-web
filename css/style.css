@@ -5419,7 +5419,8 @@ button.bg-dark:focus {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; }
+  display: flex !important; 
+  justify-content: space-between;}
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
@@ -8085,7 +8086,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light {
   background: transparent !important;
-  background: #3a4348 !important;
+  /*background: #3a4348 !important;*/
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
@@ -8165,7 +8166,7 @@ h1, h2, h3, h4, h5,
         color: #fff;
         background: #005FAB; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #005FAB; }
+    /*color: #005FAB;*/ }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
         color: #fff; } }
@@ -8509,7 +8510,7 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     background: #005FAB;
     border: 1px solid #005FAB;
-    color: #000000; }
+    color: #ffffff; }
     .btn.btn-primary:hover {
       border: 1px solid #005FAB;
       background: transparent;
@@ -9013,8 +9014,9 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
-  position: relative; }
+  padding: 3em 0;
+  position: relative; 
+background: #fafafa ;}
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -9881,6 +9883,35 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+
+  @media only screen and (min-width: 320px){
+    body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 375px){
+    body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
+      width: 115%;
+    }
+  }
+  @media only screen and (min-width: 425px){
+    body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
+      width: 130%;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    
+  }
+  @media only screen and (min-width: 1024px){
+    body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
+      width: 160%;
+    }
+  }
+  @media only screen and (min-width: 1440px){
+    body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
+      width: 200%;
+    }
+  }
 
 @-webkit-keyframes loader-rotate {
   100% {
