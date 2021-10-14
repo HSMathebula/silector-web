@@ -9889,10 +9889,10 @@ background: #fafafa ;}
     body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
       width: 100%;
     }
-    .d-flex {
+    /*.d-flex {
       justify-content: left!important;
     }
-  }
+  }*/
   @media only screen and (min-width: 375px){
     body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
       width: 115%;
@@ -9902,9 +9902,9 @@ background: #fafafa ;}
     body > section.ftco-section.ftco-no-pt.ftco-no-pb.contact-section > div > div > div.col-md-6.d-flex.align-items-stretch > div > iframe {
       width: 130%;
     }
-    .d-flex {
+    /*.d-flex {
       justify-content: left!important;
-    }
+    }*/
   }
   @media only screen and (max-width: 600px){
     .slider-item .slider-text h1 span {
