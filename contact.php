@@ -21,7 +21,7 @@ $phone = strip_tags(htmlspecialchars($_POST['message']));
 
    
 // Create the email and send the message
-$to = 'info@silector.co.za'; 
+$to = 'info@paperinstrument.com'; 
 $email_subject = "Website's Expression of Interest Form:  $name";
 $email_body = "You have received a new message from your Website's Expression of Interest Form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\subject: $subject\n\nMessage: $message\n\n";
 
