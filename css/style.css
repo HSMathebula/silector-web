@@ -5420,7 +5420,7 @@ button.bg-dark:focus {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important; 
-  justify-content: space-between;}
+  /*justify-content: space-between;*/}
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
@@ -5687,7 +5687,9 @@ button.bg-dark:focus {
 .align-items-stretch {
   -webkit-box-align: stretch !important;
   -ms-flex-align: stretch !important;
-  align-items: stretch !important; }
+  align-items: stretch !important;
+justify-content: space-between; }
+  
 
 .align-content-start {
   -ms-flex-line-pack: start !important;

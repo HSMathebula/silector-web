@@ -7336,6 +7336,7 @@ button.bg-dark:focus {
   -webkit-box-align: stretch !important;
       -ms-flex-align: stretch !important;
           align-items: stretch !important;
+          justify-content: space-between;
 }
 
 .align-content-start {
