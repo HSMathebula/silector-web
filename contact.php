@@ -16,16 +16,16 @@ if(empty($_POST['name'])      ||
    
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
-$phone = strip_tags(htmlspecialchars($_POST['subject']));
-$phone = strip_tags(htmlspecialchars($_POST['message']));
+$subject = strip_tags(htmlspecialchars($_POST['subject']));
+$message = strip_tags(htmlspecialchars($_POST['message']));
 
    
 // Create the email and send the message
 $to = 'info@paperinstrument.com'; 
 $email_subject = "Website's Expression of Interest Form:  $name";
-$email_body = "You have received a new message from your Website's Expression of Interest Form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\subject: $subject\n\nMessage: $message\n\n";
+$email_body = "You have received a new message from your Website's Expression of Interest Form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage: $message\n\n";
 
-$headers = "From: info@silector\n";
+$headers = "From: info@paperinstrument.com\n";
 
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
