@@ -10648,7 +10648,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  /*color: #005FAB;*/
+  color: #005FAB;
 }
 
 @media (max-width: 991.98px) {
